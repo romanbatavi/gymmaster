@@ -96,7 +96,7 @@ while($tampil=mysqli_fetch_array($query))
 
 <div class="col-list-3">
 <div class="recent-car-list">
-<div class="car-info-box"> <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><img src="assets/images/layanan.jpg" class="img-responsive" alt="image"></a>
+<div class="car-info-box"> <a href="#<?php echo htmlentities($result->id);?>"><img src="assets/images/layanan.jpg" class="img-responsive" alt="image"></a>
 <ul>
 <li><i class="fa fa-list" aria-hidden="true"></i><?php echo htmlentities($tampil['tipe']);?></li>
 <?php if($tampil['tipe']=="UNLIMITED"){  ?>

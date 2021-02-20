@@ -404,7 +404,7 @@ echo '<div id="papanpanel2">
 
                     $("button").click(function() {
                         if (validator.validate()) {
-                            status.text("Complete...!!!").addClass("valid");
+                            status.text("Selesai").addClass("valid");
                             } else {
                             status.text("Maaf.. Mohon Periksa Kembali Data Yang Anda Masukkan").addClass("invalid");
                         }

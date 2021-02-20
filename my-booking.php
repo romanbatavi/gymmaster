@@ -172,13 +172,10 @@ while($result = mysqli_fetch_array ($query))
                 <thead>
                     <tr>
                         <th>No</th>
-                       
 						<th>Kode Tarif (Paket)</th>
-					
 						<th>Deposit Terakhir</th>
 						<th>Berlaku s/d</th>
 						<th>Sisa Kuota Latih</th>
-					
 						<th>Tambah/Aktivasi</td>
 						
                     </tr>
@@ -291,7 +288,6 @@ if($selisih < 0 || ($r['tipe']=="REGULAR" && $tampil_member['kuota_latihan']==0)
                 </div>
               </form>
             </div>
-           
           </div>
         </div>
       </div>
@@ -397,7 +393,7 @@ where (tbl_trans_deposit.id_member = '$datamember[id_member]')
 					     "oLanguage": {
 						      "sLengthMenu": "Tampilkan _MENU_ data per halaman",
 						      "sSearch": "Pencarian: ", 
-						      "sZeroRecords": "Maaf, tidak ada data yang ditemukan",
+						      "sZeroRecords": "Data Kosong",
 						      "sInfo": "Menampilkan _START_ s/d _END_ dari _TOTAL_ data",
 						      "sInfoEmpty": "Menampilkan 0 s/d 0 dari 0 data",
 						      "sInfoFiltered": "(di filter dari _MAX_ total data)",
@@ -418,7 +414,7 @@ where (tbl_trans_deposit.id_member = '$datamember[id_member]')
 					     "oLanguage": {
 						      "sLengthMenu": "Tampilkan _MENU_ data per halaman",
 						      "sSearch": "Pencarian: ", 
-						      "sZeroRecords": "Maaf, tidak ada data yang ditemukan",
+						      "sZeroRecords": "Data Kosong",
 						      "sInfo": "Menampilkan _START_ s/d _END_ dari _TOTAL_ data",
 						      "sInfoEmpty": "Menampilkan 0 s/d 0 dari 0 data",
 						      "sInfoFiltered": "(di filter dari _MAX_ total data)",

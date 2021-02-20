@@ -36,18 +36,16 @@ $msg='<script>alert(\'Halaman Berhasil Diedit\');</script>';
 												<div class="col-sm-8">
 															   <select name="menu1" onChange="MM_jumpMenu('parent',this,0)">
                   <option value="" selected="selected" class="form-control">*** Pilih Halaman ***</option>
-                  <option value="index.php?modul=web_halaman&aksi=tampil&type=panduan">Panduan Pebayaran</option>
-                  <option value="index.php?modul=web_halaman&aksi=tampil&type=privacy">privacy and policy</option>
-                  <option value="index.php?modul=web_halaman&aksi=tampil&type=aboutus">aboutus</option> 
+                  <option value="index.php?modul=web_halaman&aksi=tampil&type=panduan">Panduan Pembayaran</option>
+                  <option value="index.php?modul=web_halaman&aksi=tampil&type=privacy">Privacy & Policy</option>
+                  <option value="index.php?modul=web_halaman&aksi=tampil&type=aboutus">About Us</option> 
                   <option value="index.php?modul=web_halaman&aksi=tampil&type=faqs">FAQs</option>
                 </select>
-												</div>
-											</div>
-											<div class="hr-dashed"></div>
-											
-											<div class="form-group">
-												
-												<div class="col-sm-8">
+				</div>
+				</div>
+				<div class="hr-dashed"></div>
+				<div class="form-group">
+				<div class="col-sm-8">
 						<?php
 			
 			switch($_GET['type'])
@@ -467,7 +465,7 @@ echo '<div id="papanpanel2">
 
                     $("button").click(function() {
                         if (validator.validate()) {
-                            status.text("Complete...!!!").addClass("valid");
+                            status.text("Selesai").addClass("valid");
                             } else {
                             status.text("Maaf.. Mohon Periksa Kembali Data Yang Anda Masukkan").addClass("invalid");
                         }
