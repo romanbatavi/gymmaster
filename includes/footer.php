@@ -1,5 +1,3 @@
-
-
 <footer>
   <div class="footer-top">
     <div class="container">
@@ -8,7 +6,7 @@
           <ul>
           <li><a href="page.php?type=aboutus">About Us</a></li>
             <li><a href="page.php?type=privacy">Privacy Policy</a></li>
-          <li><a href="page.php?type=panduan">Panduan Pembayaran</a></li>
+          <li><a href="page.php?type=panduan">Panduan</a></li>
           </ul>
         </div>
       </div>
