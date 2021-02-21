@@ -28,7 +28,7 @@ $sql=mysqli_query($conn,"INSERT INTO tbl_member(id_member,nama,tanggal_daftar,us
 if($sql)
 {
 	
-echo "<script>alert('Pendaftaran Sukses. Anda sudah bisa login untuk melakukan update profil dan pemesanan paket');</script>";
+echo "<script>alert('Pendaftaran Sukses. Login Untuk Melakukan Pendaftaran Paket & Update Profil');</script>";
 }
 else 
 {

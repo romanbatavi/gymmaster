@@ -89,13 +89,11 @@
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav">
           <li><a href="index.php">Home</a></li>
-          	 
           <li><a href="page.php?type=aboutus">About Us</a></li>
           <li><a href="page.php?type=privacy">Privacy Policy</a></li>
           <li><a href="index.php#layanan">Layanan</a>
           <li><a href="contact-us.php">Contact Us</a></li>
           <li><a href="page.php?type=panduan">Pembayaran</a></li>
-
         </ul>
       </div>
     </div>

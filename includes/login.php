@@ -16,9 +16,7 @@ echo "<script type='text/javascript'> document.location = '$currentpage'; </scri
   echo "<script>alert('Invalid Login');</script>";
 }
 }
-
 ?>
-
 <div class="modal fade" id="loginform">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -46,12 +44,11 @@ echo "<script type='text/javascript'> document.location = '$currentpage'; </scri
                 </div>
               </form>
             </div>
-           
           </div>
         </div>
       </div>
       <div class="modal-footer text-center">
-        <p>Belum punya akun ? <a href="#signupform" data-toggle="modal" data-dismiss="modal">Signup Disini</a></p>
+        <p>Belum Punya Akun ? <a href="#signupform" data-toggle="modal" data-dismiss="modal">Signup Disini</a></p>
         <!--<p><a href="#forgotpassword" data-toggle="modal" data-dismiss="modal">Lupa Password ?</a></p>-->
       </div>
     </div>
