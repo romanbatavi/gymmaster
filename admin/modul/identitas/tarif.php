@@ -50,7 +50,7 @@ case "update":
 mysqli_query($conn,"UPDATE tbl_tarif SET id_tarif='$_POST[id_tarif]',
                                 tarif='$_POST[tarif]'		
 			where id_tarif='$_GET[id_tarif]'");
-echo '<script>alert(\'Data Berhasil Diedit\')
+echo '<script>alert(\'Edit Data Berhasil\')
 	setTimeout(\'location.href="?modul=identitas&aksi=tampil"\' ,0);</script>';
 break;
 }

@@ -28,7 +28,7 @@ $tanggal_lahir = $_POST['tanggal_lahir'];
 $pass = md5($_POST['password']);
 if ($ukuran>$maxUp) {
 echo "<script>
-	alert('Ukuran File Foto Terlalu Besar, Maximal 3 mb!');
+	alert('Ukuran File Foto Terlalu Besar, Maximal 3 MB!');
 	</script>";
 }else{
 $sql = mysqli_query($conn,"UPDATE tbl_member SET
@@ -44,7 +44,7 @@ $tes = $_POST['id_member'];
 $newfilename="$tes"."."."jpg";
 $tujuan = "admin/images/member/".$newfilename;//destination
 	move_uploaded_file($temp,$tujuan);
-echo '<script>alert(\'Data Berhasil Diedit\');</script>';
+echo '<script>alert(\'Edit Data Berhasil\');</script>';
 	}else{
 	echo '<script>alert(\'Gagal Mengedit !\');</script>';
 	}

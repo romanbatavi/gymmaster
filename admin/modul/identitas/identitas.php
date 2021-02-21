@@ -54,7 +54,7 @@ mysqli_query($conn,"UPDATE tbl_identitas SET id_identitas='$_GET[id_identitas]',
 alamat='$_POST[alamat]',
 no_telp='$_POST[no_telp]'						
 			where id_identitas='$_GET[id_identitas]'");
-echo '<script>alert(\'Data Berhasil Diedit\')
+echo '<script>alert(\'Edit Data Berhasil\')
 	setTimeout(\'location.href="?modul=identitas&aksi=tampil"\' ,0);</script>';
 break;
 }

@@ -18,10 +18,10 @@ $chngpwd1-> bindParam(':email', $email, PDO::PARAM_STR);
 $chngpwd1-> bindParam(':mobile', $mobile, PDO::PARAM_STR);
 $chngpwd1-> bindParam(':newpassword', $newpassword, PDO::PARAM_STR);
 $chngpwd1->execute();
-echo "<script>alert('Your Password succesfully changed');</script>";
+echo "<script>alert('Ubah Password Berhasil');</script>";
 }
 else {
-echo "<script>alert('Email id or Mobile no is invalid');</script>"; 
+echo "<script>alert('Email Atau Password Salah');</script>"; 
 }
 }
 
@@ -31,7 +31,7 @@ function valid()
 {
 if(document.chngpwd.newpassword.value!= document.chngpwd.confirmpassword.value)
 {
-alert("New Password and Confirm Password Field do not match  !!");
+alert("Password Tidak Sesusai");
 document.chngpwd.confirmpassword.focus();
 return false;
 }
@@ -54,13 +54,13 @@ return true;
                 <div class="form-group">
                   <input type="email" name="email" class="form-control" placeholder="Your Email address*" required="">
                 </div>
-  <div class="form-group">
+                <div class="form-group">
                   <input type="text" name="mobile" class="form-control" placeholder="Your Reg. Mobile*" required="">
                 </div>
-  <div class="form-group">
+                <div class="form-group">
                   <input type="password" name="newpassword" class="form-control" placeholder="New Password*" required="">
                 </div>
-  <div class="form-group">
+                <div class="form-group">
                   <input type="password" name="confirmpassword" class="form-control" placeholder="Confirm Password*" required="">
                 </div>
                 <div class="form-group">

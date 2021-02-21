@@ -35,15 +35,12 @@ echo"</table>";*/
                 <thead>
                     <tr>
                         <th>No</th>
-                       
 						<th>Kode Tarif (Paket)</th>
-					
 						<th>Deposit Terakhir</th>
 						<th>Berlaku s/d</th>
 						<th>KUOTA LATIH</th>
 						<th>Absen Latihan</td>
 						<th>Tambah/Aktivasi</td>
-						
                     </tr>
                 </thead>
                 <tbody>';
@@ -143,7 +140,6 @@ echo"<tr><td style='padding:5px' colspan='2' align='center'>";
   }
 	 
 echo"</td></tr>";
-
 echo"<tr><td width='30%'>ID MEMBER</td><td>$tampil0[id_member]</td></tr>";
 echo"<tr><td>Nama</td><td>$tampil0[nama]</td></tr>";
 echo"<tr><td>Jenis Kelamin</td><td>$tampil0[jenis_kelamin]</td></tr>";
@@ -177,7 +173,6 @@ echo '<div id="papanpanel2">
 	<h3>Edit My Profile</h3>
 	</div>  ';
 ?>
-       
         <div id="tickets">
             <ul>
 			 <li>
@@ -220,7 +215,7 @@ echo '<div id="papanpanel2">
         </script>-->
                 </li>
 				<li>
-                    <label for="no_telp" class="required">No Tepon</label>
+                    <label for="no_telp" class="required">No Telepon</label>
                     <input type="text" id="no_telp" name="no_telp" class="k-textbox" value="<?php echo "$row[no_telp]"; ?>" placeholder="Masukkan No Telepon" required validationMessage="Masukkan No Telp !!"/>
 						</li>
 				<li>
@@ -336,17 +331,9 @@ echo '<div id="papanpanel2">
             </script>
 			<script>
                 $(document).ready(function() {
-               
-
-           
                     $("#jenis_kelamin").kendoDropDownList();
-
-                  
-
-                  
                 });
             </script>
-
         </div>
 <?php
 echo '<style TYPE="text/css" > 
@@ -417,11 +404,6 @@ echo '<style TYPE="text/css" >
 	-webkit-border-radius: 7px;
 	border-radius: 7px;	
 	}
-	
-	
-	
-	
-    
    </style>';
 break;
 
@@ -439,7 +421,6 @@ if ($tampil>0){
 echo '<script>alert(\'Data Dengan id_riwayat ini Sudah Ada . . !\')
 	setTimeout(\'location.href="?modul=riwayat&aksi=tambahriwayat&id_pasien='.$_POST['id_pasien'].'"\' ,0);</script>';
 }
-
 else{
 
 	//echo"ukuran File Anda : $ukuran "."Byte</br>";
@@ -452,7 +433,7 @@ else{
 						'$_POST[id_riwayat]',
 						'$_POST[riwayat]',		
 						'$_POST[keterangan]'								
-						)"); 		
+						)"); 
 						
 		if (!$sql)
 		{
@@ -463,7 +444,7 @@ else{
 		
 		}else
 		{
-		echo '<script>alert(\'Data Berhasil Dimasukkan\')
+		echo '<script>alert(\'Input Data Berhasil\')
 			setTimeout(\'location.href="?modul=riwayat&aksi=tampil&id_pasien='.$_POST['id_pasien'].'"\' ,0);</script>';
 		}	 
 	}
@@ -507,19 +488,15 @@ $tes = $_POST['user'];
 $newfilename="$tes"."."."jpg";
 $tujuan = "images/user/".$newfilename;//destination
 	move_uploaded_file($temp,$tujuan);
-echo '<script>alert(\'Data Berhasil Diedit\')
+echo '<script>alert(\'Edit Data Berhasil\')
 	setTimeout(\'location.href="?modul=myprofile&aksi=tampil&id='.$_POST['user'].'"\' ,0);</script>';
 	}else{
-	echo '<script>alert(\'Gagal Mengedit !\')
+	echo '<script>alert(\'Gagal Mengedit!\')
 setTimeout(\'location.href="?modul=myprofile&aksi=tampil&id='.$_POST['user'].'"\' ,0);</script>';
 	}
 	}
 break;
-
-
 }
-
-
 ?>
 <iframe width=174 height=189 name="gToday:normal:calender/agenda.js" id="gToday:normal:calender/agenda.js" src="calender/ipopeng.htm" scrolling="no" frameborder="0" style="visibility:visible; z-index:999; position:absolute; top:-500px; left:-500px;">
 </iframe>
