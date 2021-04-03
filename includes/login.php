@@ -1,21 +1,21 @@
 <?php
 if(isset($_POST['login']))
-{
-$email=$_POST['email'];
-$password=md5($_POST['password']);
-$sql ="SELECT * FROM tbl_member WHERE username = '$email' and password='$password'";
-$query= mysqli_query($conn,$sql);
-$results = mysqli_fetch_array($query);
-if(mysqli_num_rows($query) > 0)
-{
-$_SESSION['login']=$_POST['email'];
-$_SESSION['fname']=$results['nama'];
-$currentpage=$_SERVER['REQUEST_URI'];
-echo "<script type='text/javascript'> document.location = '$currentpage'; </script>";
-} else{ 
-  echo "<script>alert('Invalid Login');</script>";
-}
-}
+  {
+    $email=$_POST['email'];
+    $password=md5($_POST['password']);
+    $sql ="SELECT * FROM tbl_member WHERE username = '$email' and password='$password'";
+    $query= mysqli_query($conn,$sql);
+    $results = mysqli_fetch_array($query);
+    if(mysqli_num_rows($query) > 0)
+    {
+      $_SESSION['login']=$_POST['email'];
+      $_SESSION['fname']=$results['nama'];
+      $currentpage=$_SERVER['REQUEST_URI'];
+      echo "<script type='text/javascript'> document.location = '$currentpage'; </script>";
+    }else{ 
+      echo "<script>alert('Email/Password Salah');</script>";
+          }
+  }
 ?>
 <div class="modal fade" id="loginform">
   <div class="modal-dialog" role="document">
@@ -32,13 +32,14 @@ echo "<script type='text/javascript'> document.location = '$currentpage'; </scri
                 <div class="form-group">
                   <input type="email" class="form-control" name="email" placeholder="Email address*">
                 </div>
+                
                 <div class="form-group">
                   <input type="password" class="form-control" name="password" placeholder="Password*">
                 </div>
                 <div class="form-group checkbox">
                   <input type="checkbox" id="remember">
-               
                 </div>
+
                 <div class="form-group">
                   <input type="submit" name="login" value="Login" class="btn btn-block">
                 </div>
@@ -48,7 +49,7 @@ echo "<script type='text/javascript'> document.location = '$currentpage'; </scri
         </div>
       </div>
       <div class="modal-footer text-center">
-        <p>Belum Punya Akun ? <a href="#signupform" data-toggle="modal" data-dismiss="modal">Signup Disini</a></p>
+        <p>Belum Punya Akun ? <a href="#signupform" data-toggle="modal" data-dismiss="modal">Daftar Disini</a></p>
         <!--<p><a href="#forgotpassword" data-toggle="modal" data-dismiss="modal">Lupa Password ?</a></p>-->
       </div>
     </div>

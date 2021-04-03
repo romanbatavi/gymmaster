@@ -123,7 +123,7 @@ var check = function() {
         </div>
       </div>
       <div class="modal-footer text-center">
-        <p>Sudah Punya akun? <a href="#loginform" data-toggle="modal" data-dismiss="modal">Login disini</a></p>
+        <p>Sudah Punya Akun ? <a href="#loginform" data-toggle="modal" data-dismiss="modal">Login Disini</a></p>
       </div>
     </div>
   </div>
